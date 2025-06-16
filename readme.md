@@ -1,20 +1,13 @@
-
----
-
-### 📄 `README.md`
-
-````markdown
 # Programowanie w językach skryptowych
 
 **Indeks:** 21234  
-**Autor:** [Twoje Imię i Nazwisko]  
+**Autor:** Zofia Głowacka  
 **Przedmiot:** Programowanie w językach skryptowych  
 **Rok akademicki:** 2024/2025
 
 ## 📘 Opis
 
-Projekt stworzony w ramach zajęć z przedmiotu *Programowanie w językach skryptowych*. Celem aplikacji jest prezentacja interaktywnej encyklopedii zwierząt z animacjami i integracją z API Wikipedii.
-
+Projekt stworzony w ramach zajęć z przedmiotu *Programowanie w językach skryptowych*. Repozytorium zawiera pliki zadań wykonanych w ramach laboratorium.
 
 ## 🌐 Podgląd strony laboratoriów
 
