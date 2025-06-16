@@ -1,4 +1,3 @@
-Jasne! Oto przykładowe, schludne i kompletne `README.md` dla projektu:
 
 ---
 
