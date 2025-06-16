@@ -9,10 +9,10 @@
 
 Repozytorium zawiera pliki zadań wykonanych w ramach laboratoriów z przedmiotu *Programowanie w językach skryptowych*
 
-## 🌐 Podgląd strony laboratoriów
+## 🌐 React
 
 👉 [Hosting GitHub Pages](https://laritaait.github.io/Prog_Skrypt_2025/)
 
-# Projekty 
+## Laboratoria
 - 🔗 [Laboratorium 1 – Szablon HTML + CSS](https://laritaait.github.io/Prog_Skrypt_2025/Lab1)
 
