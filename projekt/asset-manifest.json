@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/LaRitaait.github.io/Prog_Skrypt_2025/projekt/static/css/main.5d51b35f.css",
-    "main.js": "/LaRitaait.github.io/Prog_Skrypt_2025/projekt/static/js/main.f55738c0.js",
-    "index.html": "/LaRitaait.github.io/Prog_Skrypt_2025/projekt/index.html",
-    "main.5d51b35f.css.map": "/LaRitaait.github.io/Prog_Skrypt_2025/projekt/static/css/main.5d51b35f.css.map",
-    "main.f55738c0.js.map": "/LaRitaait.github.io/Prog_Skrypt_2025/projekt/static/js/main.f55738c0.js.map"
+    "main.css": "/Prog_Skrypt_2025/projekt/static/css/main.5d51b35f.css",
+    "main.js": "/Prog_Skrypt_2025/projekt/static/js/main.c3a83f5a.js",
+    "index.html": "/Prog_Skrypt_2025/projekt/index.html",
+    "main.5d51b35f.css.map": "/Prog_Skrypt_2025/projekt/static/css/main.5d51b35f.css.map",
+    "main.c3a83f5a.js.map": "/Prog_Skrypt_2025/projekt/static/js/main.c3a83f5a.js.map"
   },
   "entrypoints": [
     "static/css/main.5d51b35f.css",
-    "static/js/main.f55738c0.js"
+    "static/js/main.c3a83f5a.js"
   ]
 }
