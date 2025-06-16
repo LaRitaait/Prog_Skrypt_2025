@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laboratorium 3 - Bootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .carousel-inner img {
+      width: 100%;
+      height: auto;
+    }
+    .carousel-caption {
+      background: rgba(0,0,0,0.6);
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .section-header {
+      padding: 60px 0;
+      background-color: #f8f9fa;
+    }
+    .section-header h1 {
+      color: #343a40;
+      margin-bottom: 40px;
+    }
+    .circle-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+    .circle-img:hover {
+      transform: scale(1.1);
+    }
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 30px 0;
+    }
+    footer a.btn {
+      margin-top: 10px;
+    }
+    .jumbotron {
+      background-color: #e9ecef;
+      padding: 60px 30px;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .jumbotron h1 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#main-page">Strona główna</a></li>
+        <li><a href="#druga-sekcja">Druga sekcja</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header style="margin-top: 50px;">
+  <div class="container">
+    <div id="carouselID" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselID" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselID" data-slide-to="1"></li>
+        <li data-target="#carouselID" data-slide-to="2"></li>
+        <li data-target="#carouselID" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/krolik2.jpg" alt="Slajd 1">
+          <div class="carousel-caption">Pierwszy slajd</div>
+        </div>
+        <div class="item">
+          <img src="img/krolik4.jpg" alt="Slajd 2">
+          <div class="carousel-caption">Drugi slajd</div>
+        </div>
+        <div class="item">
+          <img src="img/krolik3.jpg" alt="Slajd 3">
+          <div class="carousel-caption">Trzeci slajd</div>
+        </div>
+        <div class="item">
+          <img src="img/krolik10.jpg" alt="Slajd 4">
+          <div class="carousel-caption">Czwarty slajd</div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carouselID" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Poprzedni</span>
+      </a>
+      <a class="right carousel-control" href="#carouselID" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Następny</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section id="main-page" class="jumbotron text-center">
+  <div class="container">
+    <h1>Witamy na stronie!</h1>
+    <p>To jest główna sekcja witryny z wykorzystaniem klasy jumbotron.</p>
+  </div>
+</section>
+
+<section id="druga-sekcja" class="section-header">
+  <div class="container text-center">
+    <h1 style="color: #007bff;">Druga Sekcja</h1>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="img/Osoba2.png" class="circle-img" alt="Osoba 1">
+        <h3 style="color: #555;">Jan Kowalski</h3>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/Osoba1.jpg" class="circle-img" alt="Osoba 2">
+        <h3 style="color: #555;">Anna Nowak</h3>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/Osoba3.jpg" class="circle-img" alt="Osoba 3">
+        <h3 style="color: #555;">Michał Nowak</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center">
+  <div class="container">
+    <a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal">Polityka prywatności</a>
+  </div>
+</footer>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Polityka prywatności</h4>
+      </div>
+      <div class="modal-body">
+        <h1>Polityka Prywatności</h1>
+<p>Szanujemy Twoją prywatność i zobowiązujemy się do jej ochrony. W niniejszym dokumencie opisujemy, jakie dane zbieramy i w jaki sposób je wykorzystujemy.</p>
+<p>Gromadzimy jedynie podstawowe informacje, takie jak adres IP, typ przeglądarki oraz czas wizyty, w celu poprawy jakości strony i zapewnienia jej prawidłowego działania.</p>
+<p>Nie udostępniamy Twoich danych osobowych osobom trzecim. Masz prawo wglądu do swoich danych, ich poprawiania lub żądania usunięcia.</p>
+<p>W przypadku pytań dotyczących polityki prywatności skontaktuj się z nami przez formularz kontaktowy dostępny na stronie.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
