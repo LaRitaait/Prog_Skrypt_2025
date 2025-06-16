@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/Prog_Skrypt_2025/projekt/static/css/main.5d51b35f.css",
-    "main.js": "/Prog_Skrypt_2025/projekt/static/js/main.c3a83f5a.js",
+    "main.css": "/Prog_Skrypt_2025/projekt/static/css/main.c5a27c37.css",
+    "main.js": "/Prog_Skrypt_2025/projekt/static/js/main.6d77fc59.js",
+    "static/media/las.jpg": "/Prog_Skrypt_2025/projekt/static/media/las.9df33366666d974dac1c.jpg",
+    "static/media/leaf.png": "/Prog_Skrypt_2025/projekt/static/media/leaf.6dbb3edb45e0919244ae.png",
     "index.html": "/Prog_Skrypt_2025/projekt/index.html",
-    "main.5d51b35f.css.map": "/Prog_Skrypt_2025/projekt/static/css/main.5d51b35f.css.map",
-    "main.c3a83f5a.js.map": "/Prog_Skrypt_2025/projekt/static/js/main.c3a83f5a.js.map"
+    "main.c5a27c37.css.map": "/Prog_Skrypt_2025/projekt/static/css/main.c5a27c37.css.map",
+    "main.6d77fc59.js.map": "/Prog_Skrypt_2025/projekt/static/js/main.6d77fc59.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d51b35f.css",
-    "static/js/main.c3a83f5a.js"
+    "static/css/main.c5a27c37.css",
+    "static/js/main.6d77fc59.js"
   ]
 }
