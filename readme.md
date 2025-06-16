@@ -7,7 +7,7 @@
 
 ## 📘 Opis
 
-Projekt stworzony w ramach zajęć z przedmiotu *Programowanie w językach skryptowych*. Repozytorium zawiera pliki zadań wykonanych w ramach laboratorium.
+Repozytorium zawiera pliki zadań wykonanych w ramach laboratoriów z przedmiotu *Programowanie w językach skryptowych*
 
 ## 🌐 Podgląd strony laboratoriów
 
