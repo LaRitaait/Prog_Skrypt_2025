@@ -14,5 +14,5 @@ Repozytorium zawiera pliki zadań wykonanych w ramach laboratoriów z przedmiotu
 👉 [Hosting GitHub Pages](https://laritaait.github.io/Prog_Skrypt_2025/)
 
 # Projekty 
-- 🔗 [Projekt 1 – Szablon HTML + CSS](https://laritaait.github.io/Prog_Skrypt_2025/Lab1)
+- 🔗 [Laboratorium 1 – Szablon HTML + CSS](https://laritaait.github.io/Prog_Skrypt_2025/Lab1)
 
