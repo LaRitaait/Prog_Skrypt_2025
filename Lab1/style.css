@@ -1,0 +1,97 @@
+body {
+  color: #ffffff;
+  background-color: #000000;
+  margin: 0px;
+  text-align: center;
+}
+
+header, nav, main, footer {
+  display: block;
+  width: 1078px;
+}
+
+header {
+  height: 100px;
+  background-color: #333333;
+  position: relative;
+}
+
+nav {
+  height: 50px;
+  background-color: #444444;
+}
+
+main {
+  height: auto;
+  overflow: hidden;
+  background-color: #555555;
+}
+
+footer {
+  height: 50px;
+  background-color: #222222;
+  clear: both;
+}
+
+#container {
+  position: relative;
+  margin: auto;
+  width: 1078px;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  text-align: left;
+}
+
+#col-left {
+  background-color: #006acc;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+#col-center {
+  background-color: #88aaff;
+  width: 850px;
+  height: auto;
+  float: left;
+  padding: 10px;
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+  height: 40px;
+  border: 2px dotted #731980;
+}
+
+#logo img {
+  max-height: 80px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+thead {
+  background-color: #cccccc;
+}
+
+td, th {
+  border: 1px solid #000000;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
