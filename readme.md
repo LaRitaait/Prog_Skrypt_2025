@@ -20,5 +20,7 @@ Repozytorium zawiera pliki zadań wykonanych w ramach laboratoriów z przedmiotu
 - 🔗 [Laboratorium 4 – Formularz](https://laritaait.github.io/Prog_Skrypt_2025/Lab4)
 - 🔗 [Laboratorium 5 – Tablice](https://laritaait.github.io/Prog_Skrypt_2025/Lab5)
 - 🔗 [Laboratorium 6 – Quiz](https://laritaait.github.io/Prog_Skrypt_2025/Lab6)
+- 🔗 [Laboratorium 7 – React](https://laritaait.github.io/Prog_Skrypt_2025/Lab7)
+
 - https://laritaait.github.io/ImieNazwiskoNrIndeksu/lab7prod/
 
