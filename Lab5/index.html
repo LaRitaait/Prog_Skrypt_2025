@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 5 - Tablice i DOM</title>
+</head>
+<body>
+  <h1>LAB 5 – Operacje na tablicach i DOM</h1>
+
+  <section>
+    <h2>ZADANIE 1 – Tablice: dodawanie i usuwanie</h2>
+    <p id="zad1-p1"></p>
+    <p id="zad1-p2"></p>
+    <p id="zad1-p3"></p>
+  </section>
+
+  <section>
+    <h2>ZADANIE 2 – Druga tablica i modyfikacje</h2>
+    <div id="zad2"></div>
+  </section>
+
+  <section>
+    <h2>ZADANIE 3 – Liczba formularzy</h2>
+    <form></form>
+    <form></form>
+    <p id="form-count"></p>
+  </section>
+
+  <section id="main-page">
+    <h2>ZADANIE 4 – DOM i pętle</h2>
+    <p id="personal"></p>
+    <p id="tab-element1"></p>
+    <p id="tab-element2"></p>
+    <div id="while-loop"></div>
+    <div id="for-loop"></div>
+    <button onclick="showInfo()">Pokaż dane</button>
+  </section>
+
+  <section>
+    <h2>ZADANIE 5 – QUIZ</h2>
+    <div id="quiz"></div>
+  </section>
+
+<script>
+  const tablica = ['Jan', 'Anna', 'Kasia', 'Tomek', 'Ola'];
+  document.getElementById('zad1-p1').innerHTML = "Trzeci element: " + tablica[2];
+  tablica[tablica.length - 1] = 'ZmienionaOla';
+  document.getElementById('zad1-p2').innerHTML = "Zmieniony ostatni element: " + tablica[tablica.length - 1];
+  tablica[5] = 'nowy6';
+  tablica[tablica.length] = 'nowy7';
+  tablica.push('nowy8', 'nowy9');
+  tablica.unshift('start1', 'start2');
+  document.getElementById('zad1-p3').innerHTML = "Cała tablica: " + tablica.join(', ');
+
+  const nowaTablica = ['pies', 'kot', 'mysz'];
+  const divZad2 = document.getElementById('zad2');
+  divZad2.innerHTML += "<p>Pierwszy element to <strong>" + nowaTablica[0] + "</strong></p>";
+  divZad2.innerHTML += "<p>Ostatni element to <strong>" + nowaTablica[nowaTablica.length - 1] + "</strong></p>";
+  nowaTablica.unshift('chomik');
+  divZad2.innerHTML += "<p>Po dodaniu na początek: <strong>" + nowaTablica[0] + "</strong></p>";
+
+  const formCount = document.forms.length;
+  document.getElementById('form-count').innerHTML = "Liczba formularzy na stronie: " + formCount;
+
+  document.getElementById("personal").innerHTML = "Imię: Jan, Nazwisko: Kowalski, Nr indeksu: 123456";
+  document.getElementById("tab-element1").innerHTML = "Pierwszy element tablicy tablica: " + tablica[0];
+  document.getElementById("tab-element2").innerHTML = "Drugi element tablicy nowaTablica: " + nowaTablica[1];
+
+  let i = 0;
+  const połowa = Math.floor(tablica.length / 2);
+  let htmlWhile = "<p>Połowa elementów (while):</p><ul>";
+  while (i < połowa) {
+    htmlWhile += "<li>" + tablica[i] + "</li>";
+    i++;
+  }
+  htmlWhile += "</ul>";
+  document.getElementById('while-loop').innerHTML = htmlWhile;
+
+  let htmlFor = "<p>Połowa elementów (for):</p><ul>";
+  for (let j = 0; j < Math.floor(nowaTablica.length / 2); j++) {
+    htmlFor += "<li>" + nowaTablica[j] + "</li>";
+  }
+  htmlFor += "</ul>";
+  document.getElementById('for-loop').innerHTML = htmlFor;
+
+  function showInfo() {
+    const info = document.getElementById("personal").innerHTML;
+    alert("Dane z DOM: " + info);
+  }
+
+  const questions = [
+    ['Ile księżyców ma Ziemia?', 1],
+    ['Ile księżyców ma Saturn?', 62],
+    ['Ile księżyców ma Wenus?', 0]
+  ];
+
+  let quizHTML = '';
+  let score = 0;
+
+  for (let k = 0; k < questions.length; k++) {
+    const question = questions[k];
+    const answer = prompt(question[0]);
+    if (parseInt(answer) === question[1]) {
+      alert("Prawidłowa odpowiedź!");
+      score++;
+    } else {
+      alert("Błąd. Prawidłowa odpowiedź to " + question[1]);
+    }
+  }
+
+  document.getElementById('quiz').innerHTML = "<p>Uzyskany wynik: " + score + " / " + questions.length + "</p>";
+</script>
+
+</body>
+</html>
