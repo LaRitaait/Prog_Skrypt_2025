@@ -19,4 +19,5 @@ Repozytorium zawiera pliki zadań wykonanych w ramach laboratoriów z przedmiotu
 - 🔗 [Laboratorium 3 – Bootstrap](https://laritaait.github.io/Prog_Skrypt_2025/Lab3)
 - 🔗 [Laboratorium 4 – Formularz](https://laritaait.github.io/Prog_Skrypt_2025/Lab4)
 - 🔗 [Laboratorium 5 – Tablice](https://laritaait.github.io/Prog_Skrypt_2025/Lab5)
+- 🔗 [Laboratorium 6 – Quiz](https://laritaait.github.io/Prog_Skrypt_2025/Lab6)
 
