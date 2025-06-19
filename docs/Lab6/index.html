@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 6 – Quiz z DOM</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #Projekt1 { border: 1px solid #ccc; padding: 20px; width: 400px; }
+    button { padding: 10px 20px; margin-top: 10px; }
+  </style>
+  <script>
+    let score = 0;
+    let q = 0;
+
+    const questions = [
+      ['Stolica Polski?', 'Warszawa'],
+      ['Ile nóg ma pająk?', '8'],
+      ['Jak nazywa się największy ocean?', 'Spokojny'],
+      ['2 + 2 = ?', '4'],
+      ['Jaki kolor ma trawa?', 'zielony']
+    ];
+
+    function showQuestion() {
+      if (q < questions.length) {
+        document.getElementById('question').innerHTML = questions[q][0];
+        document.getElementById('answer').value = '';
+      } else {
+        document.getElementById('Projekt1').innerHTML =
+          `<h2>Koniec quizu!</h2><p>Uzyskane punkty: <strong>${score}</strong> z ${questions.length}.</p>`;
+      }
+    }
+
+    function checkAnswer() {
+      const userAnswer = document.getElementById('answer').value.trim();
+      const correctAnswer = questions[q][1];
+
+      if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+        score++;
+        alert('Dobra odpowiedź!');
+      } else {
+        alert(`Zła odpowiedź! Prawidłowa to: ${correctAnswer}`);
+      }
+
+      q++;
+      showQuestion();
+
+      if (q <= questions.length) {
+        document.getElementById('scoreDisplay').innerText = `Wynik: ${score} / ${questions.length}`;
+      }
+    }
+
+    window.onload = showQuestion;
+  </script>
+</head>
+<body>
+  <h1>LAB 6 – Interaktywny Quiz z DOM</h1>
+
+  <section id="Projekt1">
+    <h2>Quiz</h2>
+    <p id="question"></p>
+    <input type="text" id="answer" placeholder="Wpisz odpowiedź">
+    <br>
+    <button onclick="checkAnswer()">Następne pytanie</button>
+    <p id="scoreDisplay">Wynik: 0 / 5</p>
+  </section>
+
+</body>
+</html>
